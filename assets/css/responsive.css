@@ -1,0 +1,54 @@
+/*
+
+BreakPoints
+750px
+500px
+350px
+
+*/
+
+@media screen and (max-width: 750px) {
+  .income-space {
+    width: 100%;
+  }
+  .inside-data-spaces {
+    flex-direction: column;
+  }
+  .display-datas h2 {
+    font-size: 18px;
+  }
+  #ecart {
+    font-size: 30px;
+  }
+  select {
+    width: 8%;
+  }
+  #span-text,
+  #span-number {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .income,
+  .expenses {
+    width: 40vw;
+  }
+  .display-datas h2 {
+    font-size: 16px;
+  }
+  select {
+    width: 15%;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .income,
+  .expenses {
+    width: 60vw;
+  }
+  .display-datas h2 {
+    font-size: 13px;
+  }
+}

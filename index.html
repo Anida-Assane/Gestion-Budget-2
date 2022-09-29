@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Gestion Budget</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="card-budget">
+      <div class="display-datas">
+        <h2 style="margin-bottom: 12px">Available Budget in April 2019</h2>
+        <span id="ecart"></span>
+        <div class="container-data">
+          <div class="income">
+            <div class="income-details">
+              <div class="group-spans">
+                <span>Income</span>
+                <span id="display_income"></span>
+              </div>
+            </div>
+          </div>
+          <div class="expenses">
+            <div class="expenses-details">
+              <div class="group-spans">
+                <span>Expenses</span>
+                <span id="display_expenses"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-datas">
+        <select id="input_value">
+          <option value="+">+</option>
+          <option value="-">-</option>
+        </select>
+        <div class="text-area">
+          <input type="text" id="text" placeholder="Add description" />
+          <span id="span-text" hidden style="color: red"
+            >Description obligatoire</span
+          >
+        </div>
+        <div class="number-area">
+          <input type="number" id="number" placeholder="value" min="0" />
+          <span id="span-number" hidden style="color: red"
+            >Valeur obligatoire</span
+          >
+        </div>
+        <div class="icon-income">
+          <i
+            class="fa-regular fa-circle-check check-icon"
+            style="font-size: 28px; color: #fba90a"
+            ;
+            id="check-icon"
+          ></i>
+        </div>
+      </div>
+    </section>
+    <section class="data-spaces">
+      <div class="inside-data-spaces">
+        <div class="income-space">
+          <h3>INCOME</h3>
+          <div id="inside-income"></div>
+        </div>
+        <div class="expenses-space">
+          <h3>EXPENSES</h3>
+          <div id="inside-expenses"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/myscript.js"></script>
+  </body>
+</html>
